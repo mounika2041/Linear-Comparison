@@ -22,15 +22,12 @@ namespace Linear_Comparision
             length1 = Math.Sqrt(Math.Abs((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1)));
             length2 = Math.Sqrt(Math.Abs((x4 - x3) * (x4 - x3) + (y4 - y3) * (y4 - y3)));
             Console.WriteLine("length of first line is:{0} and second line is:{1}", length1, length2);
-
-            if (length1 == length2)
-
-                Console.WriteLine("Two lines are equal");
-            else if (length1 > length2)
-                Console.WriteLine("first line is greater than second line ");
-            else
-                Console.WriteLine("first line is less than second line");
+            //  java oops concept of Equals Method 
+            Console.WriteLine(length1.Equals(length2));
+            // java oops concept of CompareTo Method
+            Console.WriteLine(length1.CompareTo(length2));
             Console.ReadLine();
+
         }
     }
 }
